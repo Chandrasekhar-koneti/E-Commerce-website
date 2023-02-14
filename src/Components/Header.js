@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
 
-const Header = () => {
+const Header = (props) => {
   return (
     <>
         <nav>
@@ -11,7 +11,7 @@ const Header = () => {
                 <a href='#' alt='#' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}}>ABOUT</a>
 
             </div>
-            <button className='cart-btn'>Cart </button> <span className="cart-number">0</span>
+            <button onClick={props.opencarthandler}className='cart-btn'>Cart </button> <span className="cart-number">0</span>
 
         </nav>
         <header className="page-header">

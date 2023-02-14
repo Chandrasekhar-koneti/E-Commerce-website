@@ -1,8 +1,9 @@
 .cart-button{ 
-    background-color: lightslategray;
+    background-color: rgb(180, 208, 236);
     height: 2.5rem;
     border-radius: 5px;
     width:10rem;
+    font-style: oblique;
 
 }
 .button{
