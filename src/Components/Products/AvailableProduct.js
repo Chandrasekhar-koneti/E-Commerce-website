@@ -7,13 +7,14 @@ const productsArr = [
         title: 'Colors',
         price: 100,
         imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%201.png',
-
+        quantity:1
     },
 
     {   id:'k2',
         title: 'Black and white Colors',
         price: 50,
         imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%202.png',
+        quantity:1
 
     },
 
@@ -21,6 +22,7 @@ const productsArr = [
         title: 'Yellow and Black Colors',
         price: 70,
         imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%203.png',
+        quantity:1
 
     },
 
@@ -28,6 +30,7 @@ const productsArr = [
         title: 'Blue Color',
         price: 100,
         imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%204.png',
+        quantity:1
 
     }
 
@@ -38,6 +41,7 @@ const productsArr = [
 const AvailableProducts = () => {
     const prod = productsArr.map((product) => (
         <ProductItem 
+            item={product}
             key={product.id}
             id={product.id}
             title={product.title}
@@ -46,7 +50,7 @@ const AvailableProducts = () => {
         />
     ))
   return (
-    <div className='productCard'>
+    <div className='productCard' id='id'>
         {prod}
     </div>
   )

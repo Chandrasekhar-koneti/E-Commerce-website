@@ -6,7 +6,8 @@ import './Modal.css'
 
 const ModalOverlay=(props)=>{
     return <div className="modal">
-        <div >{props.children}</div></div>
+        <div >{props.children}</div>
+        </div>
 }
 
 const portalelement=document.getElementById('overlays')

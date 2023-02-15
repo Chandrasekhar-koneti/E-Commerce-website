@@ -36,8 +36,9 @@ nav{
     color:navy;
     background-color:#5a595931;
     /* background-color: aqua; */
-    text-align: center;
-    padding: 40px;
+    text-align:center;
+    padding-bottom: 40px;
+    padding-left:5%;
     font-size:100px;
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
