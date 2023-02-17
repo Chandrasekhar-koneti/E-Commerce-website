@@ -3,7 +3,7 @@ import './Button.css'
 const Button = (props) => {
   return (
     <div className='button'>
-      <button className='cart-button' >See the Cart</button>
+      <button className='cart-button' onClick={props.opencarthandler}>See the Cart</button>
     </div>
   )
 }

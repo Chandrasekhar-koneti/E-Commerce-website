@@ -30,9 +30,11 @@ nav{
     top: -44px;
     left: -72px;
     border-radius: 5px;
-    outline: none;
+    cursor: pointer;
+    outline:auto;
     width: 60px;
     height:  30px;
+
 }
 .cart-number{
     position: relative;

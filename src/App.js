@@ -8,10 +8,14 @@ import CartItem from './Components/Cart/CartItem';
 import CartProvider from './Components/Store/CartProvider';
 import About from './Components/Pages/About';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import Home from './Components/Pages/Home';
+import Store from './Components/Pages/Store';
 
 const router1=createBrowserRouter([
+  
+  {path:'/home',element:<Home />},
   {path:'/about',element:<About />},
-  // {path:'/store',element<}
+  {path:'/store',element:<Store />}
 ])
 
 function App() {
@@ -32,8 +36,8 @@ function App() {
       <Header opencarthandler={showcartlist}/>
       {cartstatus && <CartItem onClick={hidecartlist}/>}
       <AvailableProducts/>
-      <Button/>
-      <Footer/>
+      <Button opencarthandler={showcartlist} />
+      <Footer />
       </RouterProvider>
     </CartProvider>
   );
