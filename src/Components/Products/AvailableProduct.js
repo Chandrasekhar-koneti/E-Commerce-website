@@ -50,7 +50,7 @@ const AvailableProducts = () => {
         />
     ))
   return (
-    <div className='productCard' id='id'>
+    <div className='productcard' id='id'>
         {prod}
     </div>
   )

@@ -1,10 +1,9 @@
-/* .item{
-    list-style: none;
-    background-color:#ccc;
-    max-height:  20rem;
-    padding: 2px;
+.cartlist{
+   text-align: center;
+   font-style: italic;
+   font-family:'Metal Mania';
 
-} */
+}
 
 .listrow{
 
@@ -17,7 +16,7 @@
     
     .title{
         position: relative;
-        left: 5rem;
+        left: 2rem;
         font-size: 20px;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
@@ -26,7 +25,7 @@
     
     .price{
         position: relative;
-        left: 9rem;
+        left: 7rem;
         font-size: 20px;
         font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -34,7 +33,7 @@
     }
     .quantity{
         position: relative;
-        left: 12rem;
+        left: 11rem;
         font-size: 20px;
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;

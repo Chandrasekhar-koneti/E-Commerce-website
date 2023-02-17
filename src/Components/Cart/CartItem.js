@@ -51,7 +51,7 @@ const CartItem=(props)=>{
         <Modal onclick={props.onClick}>
             <button style={{float:"right"}} onClick={props.onClick}>X</button>
             
-            <h1 style={{ textAlign: 'center' }}>Cart List</h1>
+            <h1 className="cartlist">CART</h1>
             <span className="title">ITEM</span>
             <span className="price">PRICE</span>
             <span className="quantity">QUANTITY</span>

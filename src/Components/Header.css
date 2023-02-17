@@ -1,21 +1,29 @@
+
 nav{
     background-color: black;
     color: white;
-    /* padding: 0.5em; */
-
-    /* width: 100%; */
+    padding: 0.5em;
+    padding: 0.2em;
+    position:fixed;
+    width: 100%;
+    height:60px;
+    z-index: 1;
 }
 
 .nav-bar{
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     letter-spacing:3.5px;
     font-weight: bold;
 }
-
+.header{
+    position: relative;
+    top: 7rem;
+    top: 2.3rem;
+}
 .cart-btn{
     position: relative;
     float:right;
@@ -33,13 +41,31 @@ nav{
 }
 
 .page-header{
+    /* position:fixed; */
+    padding-top: 8rem;
+    padding-top: 6rem;
     color:navy;
-    background-color:#5a595931;
-    /* background-color: aqua; */
-    text-align:center;
-    padding-bottom: 40px;
-    padding-left:5%;
+    background-color:#ccc;
+    text-align: center;
+    padding: 40px;
     font-size:100px;
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-about:hover 
+
+{
+    outline: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.nav-home:hover
+/* .nav-bar a.active */
+{
+    outline: 1px solid #ccc;
+    border-radius: 3px;
+}
+.nav-store:hover{
+    outline: 1px solid #ccc;
+    border-radius: 3px;
 }
