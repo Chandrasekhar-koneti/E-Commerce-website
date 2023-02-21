@@ -10,12 +10,16 @@ import About from './Components/Pages/About';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Home from './Components/Pages/Home';
 import Store from './Components/Pages/Store';
+import Contact from './Components/Pages/Contact';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const router1=createBrowserRouter([
   
-  {path:'/home',element:<Home />},
+  {path:'/',element:<Home />},
   {path:'/about',element:<About />},
-  {path:'/store',element:<Store />}
+  {path:'/store',element:<Store />},
+  {path:'/contact',element:<Contact />}
 ])
 
 function App() {

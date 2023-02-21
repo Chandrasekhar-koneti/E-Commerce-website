@@ -9,12 +9,14 @@ const Home=()=>{
         <div>
             <nav>
             <div className="nav-bar">
-                <NavLink  to='/home' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} 
+                <NavLink  to='/' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} 
                 className="nav-home">HOME</NavLink>
                 <NavLink to='/store' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} 
                 className="nav-store">STORE</NavLink>
                 <NavLink to='/about' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} 
                 className="nav-about">ABOUT</NavLink>
+                <NavLink to='/contact' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} 
+                className="nav-about">CONTACT</NavLink>
 
             </div>
             </nav>

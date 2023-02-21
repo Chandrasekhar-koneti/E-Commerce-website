@@ -21,9 +21,11 @@ const Header = (props) => {
                 <a href='#' alt='#' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}}>STORE</a>
                 <a href='#' alt='#' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}}>ABOUT</a>
                 <a href='#' alt='#' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}}>CONTACT</a> */}
-                <NavLink  to='/home' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} className="nav-home">HOME</NavLink>
+                <NavLink  to='/' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} className="nav-home">HOME</NavLink>
                 <NavLink to='/store' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} className="nav-store">STORE</NavLink>
                 <NavLink to='/about' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} className="nav-about">ABOUT</NavLink>
+                <NavLink to='/contact' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} className="nav-about">CONTACT</NavLink>
+
             </div>
             <button onClick={props.opencarthandler}className='cart-btn'>Cart </button>
              <span className="cart-number">{cartItemCount}</span>
