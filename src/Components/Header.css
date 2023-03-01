@@ -46,8 +46,8 @@ nav{
     /* position:fixed; */
     padding-top: 8rem;
     padding-top: 6rem;
-    color:navy;
-    background-color:#ccc;
+    color:white;
+    background-color:gray;
     text-align: center;
     padding: 40px;
     font-size:100px;
@@ -71,3 +71,9 @@ nav{
     outline: 1px solid #ccc;
     border-radius: 3px;
 }
+
+.nav-login:hover{
+    outline: 1px solid #d32222;
+    border-radius:3px ;
+}
+

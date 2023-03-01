@@ -1,0 +1,15 @@
+.mar{
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom:3% ;
+    background-color: whitesmoke;
+    border-radius: 1% solid ;
+}
+.img{
+    text-align: left;
+    padding: 1%;
+}
+.product{
+    margin-left: 10%;
+}

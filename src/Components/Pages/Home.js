@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "../Footer";
+import AuthContext from "../Store/Auth-context";
 import './Home.css'
 
 const Home=()=>{
+
+    // const[buy,setbuy]=useState(false)
+
+    // const buyhandler=(e)=>{
+    //     e.preventDefault()
+    //     setbuy(true)
+    //     if(setbuy){
+    //     alert('Sucess')
+    //     }
+    // }
+
+    const Autctx=useContext(AuthContext)
+    const isLoggedIn=Autctx.isLoggedIn
+
+    const logouthandler=()=>{
+      Autctx.logout()
+    }
 
     return(
         <div>
@@ -16,7 +34,11 @@ const Home=()=>{
                 <NavLink to='/about' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} 
                 className="nav-about">ABOUT</NavLink>
                 <NavLink to='/contact' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} 
-                className="nav-about">CONTACT</NavLink>
+                className="nav-about">CONTACT</NavLink>   
+
+                <NavLink to='/login' style={{padding: '10px',margin:'10px' ,textDecoration: 'none',color: 'red'}} 
+                className="nav-login" onClick={logouthandler}>{!isLoggedIn ? 'LOGIN' : 'LOGOUT'}</NavLink>
+
 
             </div>
             </nav>
@@ -33,7 +55,7 @@ const Home=()=>{
                     <span className="tour-date">JUNE 16</span>
                     <span  className='tour-place'>DETROIT, MI</span>
                     <span className='tour-place-1'>DTE ENERGY MUSIC THEATRE</span>
-                    <button className='tour-btn'>BUY TICKETS</button>
+                    <button className='tour-btn' >BUY TICKETS</button>
                 </div>
                 <div className="tour-item">
                     <span className="tour-date">JUNE 19</span>

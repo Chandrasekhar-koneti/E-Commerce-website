@@ -34,6 +34,9 @@ const Contact=()=>{
         })
         const data= await response.json()
         console.log(data)
+        nameRef.current.valueOf.reset()
+        emailRef.current.value.reset()
+        phoneRef.current.value.reset()
     }
 
 

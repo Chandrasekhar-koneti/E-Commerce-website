@@ -4,7 +4,8 @@ import CartProvider from "../Store/CartProvider"
 import AvailableProducts from "../Products/AvailableProduct"
 import Button from "../Button"
 import Footer from "../Footer"
-import { useState } from "react"
+import {  useState } from "react"
+
 
 const Store=()=>{
     const [cartstatus,setcartstatus]=useState(false)
@@ -16,8 +17,12 @@ const Store=()=>{
     setcartstatus(false)
   }
 
+  
+
     return(
         <>
+        
+
         <CartProvider>
         <Header opencarthandler={showcartlist}/>
       {cartstatus && <CartItem onClick={hidecartlist}/>}

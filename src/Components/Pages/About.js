@@ -3,27 +3,30 @@ import React from "react";
 import './About.css'
 import music from '../Images/music.jpeg'
 import Footer from "../Footer";
-import Header from "../Header";
+import { NavLink } from "react-router-dom";
 
 
 const About=()=>{
     return (
         <>
-        <Header />
-        {/* <nav>
+        {/* <Header /> */}
+        <nav>
             <div className="nav-bar">
-            <NavLink  to='' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} 
+            <NavLink  to='/' style={{padding: '10px', margin: '10px',textDecoration: 'none',color: 'white'}} 
             className="nav-home">HOME</NavLink>
             <NavLink to='/store' style={{padding:'10px', margin:'10px', textDecoration:'none', color:'white'}} 
             className='nav-home'>STORE</NavLink>
             <NavLink to='/about' style={{padding:'10px', margin:'10px', textDecoration:'none',color:'white'}} 
             className='nav-home'>ABOUT</NavLink>
+            <NavLink to='/contact' style={{padding: '10px', margin: '10px',textDecoration: 'none',color:'white'}}
+             className="nav-about">CONTACT</NavLink>
+
              </div> 
         </nav>
 
         <div className="page-header" style={{color: 'white', backgroundColor: 'gray',paddingTop: '63px'}}>
         The Generics <br/>
-        </div> */}
+        </div>
 
         <section className='about'>
 

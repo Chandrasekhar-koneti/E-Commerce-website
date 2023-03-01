@@ -1,18 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import CartProvider from './Components/Store/CartProvider';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AuthContextProvider } from './Components/Store/Auth-context';
+import { BrowserRouter } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <CartProvider>
+  <BrowserRouter>
+  <AuthContextProvider>
   <React.StrictMode>
     <App />
   </React.StrictMode>
-  </CartProvider>
+  </AuthContextProvider>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
