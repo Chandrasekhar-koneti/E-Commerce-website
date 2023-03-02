@@ -16,15 +16,10 @@ const ProductItem = (props) => {
     console.log('cart items', cartCtx);
     }
 
-
-
   return (
+    <>
+   
     <div className="product" id={props.price} >
-        {/* <Link to={`/product/${props.id}`} state={{price:props.price,title:props.title,image:props.image,id:props.id}}> */}
-
-        {/* <h3 >{props.title}</h3>
-            <img src= {props.image} alt=''/>
-            </Link> */}
         <Link
         to={{
           pathname: `/Store/ProductDetail/${props.id}`,
@@ -44,10 +39,9 @@ const ProductItem = (props) => {
          <div className="product-list-amount">
                 <span>${props.price}</span>
                 <button className="add-btn" onClick={addItemToCart}>Add To Cart</button>
-         </div> 
-
-
+         </div>  
     </div>
+    </>
   )
 }
 
