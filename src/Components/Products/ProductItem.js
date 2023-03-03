@@ -2,19 +2,38 @@ import React, { useContext } from 'react'
 import './Productitem.css'
 import Cartcontext from '../Store/CartContext';
 import { Link } from 'react-router-dom';
+// import AuthContext from '../Store/Auth-context';
+// import axios from 'axios';
 
 const ProductItem = (props) => {
   console.log(props.item)
 
   const cartCtx = useContext(Cartcontext);
 
-  const addItemToCart = (e) => {
+  // const addItemToCart = (e) => {
+  //   e.preventDefault();
+  //   console.log('addItem')
+  //   cartCtx.additems(props.item);
+  //   // console.log('propsitem is',props.item)
+  //   console.log('cart items', cartCtx);
+  //   }
+
+  // const id = props.item.id;
+  // const title = props.item.title;
+  // const price = props.item.price;
+ 
+
+    // const authCtx = useContext(AuthContext);
+  // const userMailId = localStorage.getItem('email');
+  // console.log('mail from localStorage',userMailId);
+  // const regex = /[`@.`]/g;
+  // const um = userMailId.replace(regex, ''); //email without @ and .
+  
+  async function addItemToCart(e) {
     e.preventDefault();
-    console.log('addItem')
-    cartCtx.additems(props.item);
-    // console.log('propsitem is',props.item)
-    console.log('cart items', cartCtx);
-    }
+    console.log('addItem');
+    cartCtx.additems({...props.item})
+  }
 
   return (
     <>

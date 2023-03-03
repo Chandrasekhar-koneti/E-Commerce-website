@@ -1,11 +1,11 @@
-import React, {useContext, useState } from 'react';
+import React, {useContext } from 'react';
 import './App.css';
 // import Header from './Components/Header';
 // import Footer from './Components/Footer';
 // import Button from './Components/Button';
 // import AvailableProducts from './Components/Products/AvailableProduct'
 // import CartItem from './Components/Cart/CartItem';
-// import CartProvider from './Components/Store/CartProvider';
+import CartProvider from './Components/Store/CartProvider';
 import About from './Components/Pages/About';
 import Home from './Components/Pages/Home';
 import Store from './Components/Pages/Store';
@@ -13,7 +13,7 @@ import Contact from './Components/Pages/Contact';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductDetail from './Components/Products/ProductDetails';
 import Login from './Components/Pages/Login';
-import AuthContext, { AuthContextProvider } from './Components/Store/Auth-context';
+import AuthContext from './Components/Store/Auth-context';
 import {  Route, Switch } from 'react-router-dom';
 
 
@@ -47,18 +47,18 @@ function App() {
 
 // ])
 
-  const [cartstatus,setcartstatus]=useState(false)
-  const showcartlist=()=>{
-    setcartstatus(true)
-  }
+  // const [cartstatus,setcartstatus]=useState(false)
+  // const showcartlist=()=>{
+  //   setcartstatus(true)
+  // }
 
-  const hidecartlist=()=>{
-    setcartstatus(false)
-  }
+  // const hidecartlist=()=>{
+  //   setcartstatus(false)
+  // }
 
   return (
 
-    <AuthContextProvider>
+    <CartProvider>
       <Switch>
        
         <Route path = "/about">
@@ -80,7 +80,7 @@ function App() {
        
       {!isLoggedIn &&(
         <Route path='/Store'>
-          <h1>Login to view store items</h1>
+          <h1 className='text'>LOGIN TO VIEW STORE ITEMS</h1>
         </Route>
       )}
 
@@ -103,7 +103,7 @@ function App() {
        </Switch>
        
      
-    </AuthContextProvider>
+    </CartProvider>
   );
 }
 

@@ -1,11 +1,11 @@
 import React, { Fragment, useRef, useState } from "react"
-import {useParams,useLocation, NavLink}from 'react-router-dom'
+import {useLocation, NavLink}from 'react-router-dom'
 import classes from  './ProductDetail.module.css'
 import ReactImageMagnify from "react-image-magnify"
 import Footer from "../Footer"
 
 const ProductDetail=()=>{
-const params=useParams()
+// const params=useParams()
 const location=useLocation()
 
 const images=[

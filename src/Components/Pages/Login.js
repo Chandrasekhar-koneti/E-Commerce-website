@@ -59,7 +59,8 @@ const Login=()=>{
           })
         }
       }).then((data)=>{
-        Authctx.login(data.idToken)
+        Authctx.login(data.idToken,data.email)
+    
         if(isLogin){
         History.replace('/store')
         }

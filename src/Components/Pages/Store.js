@@ -7,17 +7,17 @@ import Footer from "../Footer"
 import {  useState } from "react"
 
 
-const Store=()=>{
+const Store=(props)=>{
     const [cartstatus,setcartstatus]=useState(false)
   const showcartlist=()=>{
     setcartstatus(true)
   }
+ 
 
   const hidecartlist=()=>{
     setcartstatus(false)
   }
 
-  
 
     return(
         <>
